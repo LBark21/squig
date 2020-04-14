@@ -1,0 +1,246 @@
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: grey;
+}
+
+hr {
+  height: 1px;
+  color: black;
+  background-color: black;
+  border: none;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  background: white;
+  top: 0;
+  height: 11vh;
+  z-index: 999;
+}
+
+nav {
+  display: flex;
+  width: 60%;
+  text-align: center;
+  justify-content: center;
+  margin-left: 10rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 11vh;
+}
+
+li {
+  list-style: none;
+  margin: 0 5rem;
+  display: inline-block;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-left {
+  margin-right: 10rem;
+}
+
+.list-right {
+  margin-left: 10rem;
+}
+
+.list-margin-right {
+  margin-right: 5rem;
+}
+
+.list-margin-left {
+  margin-left: 5em;
+}
+
+#logo {
+  height: 9rem;
+  width: auto;
+}
+
+/* Hero Styling */
+.hero {
+  background-image: url("https://foodanddrink.scotsman.com/wp-content/uploads/2016/03/0001-750x400.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.intro {
+  width: 35vw;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.intro-text {
+  font-size: 4rem;
+  color: black;
+  padding: 4rem;
+}
+
+.intro-list {
+  color: black;
+  flex-direction: column;
+  margin: 4rem 4rem;
+}
+
+.intro-list-item {
+  color: black;
+  font-size: 3rem;
+  list-style: none;
+  padding: 2rem 0;
+  font-family: "Sulphur Point", sans-serif;
+}
+
+.intro-list-item span {
+  color: black;
+  font-size: 2rem;
+  list-style: none;
+}
+
+.brand-img {
+  width: 60%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+.brand-img-container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+  background: white;
+  margin: auto;
+  border-radius: 0 0 1rem 1rem;
+}
+
+/* Brief Products Styling */
+.products-brief {
+  height: 89vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.products-brief-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  background: lightgrey;
+  border-radius: 1rem;
+  flex-wrap: wrap;
+}
+
+.product-box {
+  display: flex;
+  margin: 3rem;
+  padding: 3rem;
+  background: grey;
+  border-radius: 1rem;
+}
+
+#no-wierd {
+  margin-left: 5.2rem;
+}
+
+/* Where To Buy Styling */
+.where-buy {
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/8/82/MorrisonsLogo.svg/1200px-MorrisonsLogo.svg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 14rem;
+  background-size: 60rem;
+
+  height: 89vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.where-buy-title,
+.where-buy-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.where-buy-title {
+  position: absolute;
+  top: 5rem;
+  margin-bottom: 20rem;
+}
+
+.where-buy-title h2 {
+  color: azure;
+  font-size: 4rem;
+}
+
+.where-buy-content {
+  position: absolute;
+  bottom: 30rem;
+}
+
+.where-buy-content p,
+.where-buy-content a {
+  color: azure;
+  font-size: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 30%;
+  }
+}
